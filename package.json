@@ -1,0 +1,24 @@
+{
+  "name": "accessible-five-stars",
+  "version": "1.0.0",
+  "description": "an accessible radio button five star rating system. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/novis-games/accessible-five-stars.git"
+  },
+  "keywords": [
+    "accessibility",
+    "rating",
+    "start"
+  ],
+  "author": "Novis Games S.R.L.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/novis-games/accessible-five-stars/issues"
+  },
+  "homepage": "https://github.com/novis-games/accessible-five-stars#readme"
+}
