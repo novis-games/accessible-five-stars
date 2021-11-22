@@ -2,8 +2,6 @@
 function createRating(objects, starNumber, ref, document) {
     if (document) {
         htmlOut = document.createElement("div");
-        console.log("HTML OUT")
-
         var i = 1;
         for (obj in objects) {
             const form = document.createElement("form");
@@ -45,6 +43,7 @@ function createRating(objects, starNumber, ref, document) {
             }
             form.appendChild(fieldset);
             htmlOut.appendChild(form);
+            document.appendChild(htmlOut); 
             i++;
         }
     }
