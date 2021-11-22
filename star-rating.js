@@ -1,6 +1,6 @@
 var htmlOut;
 
-function createRating(objects, starNumber, ref) {
+function createRating(objects, starNumber, ref, document) {
     if (document) {
         htmlOut = document.createElement("div");
         console.log("HTML OUT")
