@@ -4,10 +4,12 @@
 
 const starRating = require('./star-rating');
 console.log(starRating.createRating()); 
+exports.starRating = starRating; 
 
 /*<form>
 <fieldset id="accessibility-rating" class="starability-slot">
   <legend width="max-content">
+  
     Punteggio accessibilità (votate:
     {{ review.accessibilityRating }} stelle):
   </legend>
