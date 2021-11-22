@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/novis-games/accessible-five-stars/issues"
   },
-  "homepage": "https://github.com/novis-games/accessible-five-stars#readme"
+  "homepage": "https://github.com/novis-games/accessible-five-stars#readme",
+  "devDependencies": {
+    "jsdom": "^18.1.1"
+  }
 }
