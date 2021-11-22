@@ -1,6 +1,6 @@
 {
   "name": "accessible-five-stars",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "an accessible radio button five star rating system. ",
   "main": "index.js",
   "scripts": {
