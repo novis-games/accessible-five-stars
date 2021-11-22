@@ -3,7 +3,7 @@
   "version": "1.0.6",
   "description": "an accessible radio button five star rating system. ",
   "main": "index.js",
-  "style": "./css/normalize.css",
+  "style": "./css/starability-slot.min.css",
   "scripts": {
     "test": "node index.js"
   },
