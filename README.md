@@ -19,24 +19,24 @@ npm i accessible-five-stars
 # usage: 
 
 - creating star radio buttons: 
-
+```javascript
   mounted() {
     starRating.createRating(
       [
         {
-          ref: "globale", /*PREFIX FOR IDS*/
-          value: this.review.globalRating /*INITIAL VALUE*/,
-          objName: "review.globalRating" /*PARENT OBJECT NAME TO BE UPDATED*/,
+          ref: "x", /*PREFIX FOR IDS*/
+          value: this.object.x /*INITIAL VALUE*/,
+          objName: "object.x" /*PARENT OBJECT NAME TO BE UPDATED*/,
         },
         {
-          ref: "accessibilità",
-          value: this.review.accessibilityRating,
-          objName: "review.accessibilityRating",
+          ref: "y",
+          value: this.object.y,
+          objName: "object.y",
         },
         {
-          ref: "gameplay",
-          value: this.review.gameplayRating,
-          objName: "review.gameplayRating",
+          ref: "z",
+          value: this.object.z,
+          objName: "object.z",
         },
       ],
       5,
@@ -44,4 +44,31 @@ npm i accessible-five-stars
       document.getElementById("accessible-div") /*PARENT DIV TO BE INJECTED WITH ELEMENTS*/
     );
   },
+```
+
+
+
+- updating value content (manual re-bind to call whenever you want): 
+```javascript
+     try {
+          var outputValues = starRating.outputValues;
+          for (ix = 0; ix < outputValues.length; ix++) {
+            var jsonVal = outputValues[ix];
+            if (jsonVal["object.x"]) {
+              this.object.x =
+                jsonVal["object.x"];
+            }
+            if (jsonVal["object.y"]) {
+              this.object.y =
+                jsonVal["object.y"];
+            }
+
+            if (jsonVal["object.x"]) {
+              this.object.z =
+                jsonVal["object.z"];
+            }
+          }
+        } catch (error) {}
+
+```
 
