@@ -1,4 +1,3 @@
-require('./css/starability-slot.min.css');
 var outputValues = []; 
 function createRating(objects, starNumber, document, div) {
     if (document) {
