@@ -2,10 +2,6 @@
 var outputValues = [];
 function createRating(objects, starNumber, document, div) {
   if (document) {
-    var link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.type = 'text/css';
-    link.href = './css/starability-slot.css';
     for (i = 0; i < objects.length; i++) {
 
       const obj = objects[i];
