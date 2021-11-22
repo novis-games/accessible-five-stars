@@ -23,5 +23,8 @@
   "homepage": "https://github.com/novis-games/accessible-five-stars#readme",
   "devDependencies": {
     "jsdom": "^18.1.1"
-  }
+  }, 
+  "files": [
+    "css/*.css"
+    ]
 }
