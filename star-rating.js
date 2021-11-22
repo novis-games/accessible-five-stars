@@ -2,20 +2,20 @@ var htmlOut;
 
 function createRating(objects, starNumber, ref)
 {
-    htmlOut = super.documentcreateElement("div");
+    htmlOut = super.document.createElement("div");
     console.log("HTML OUT")
 
     var i = 1; 
 for (obj in objects)
 {
-    const form = super.documentcreateElement("form"); 
+    const form = super.document.createElement("form"); 
     form.id = "accessible-form-" + i;
-    const fieldset = super.documentcreateElement("fieldset");
+    const fieldset = super.document.createElement("fieldset");
     fieldset.id=ref+"rating"; 
-    const legend = super.documentcreateElement("legend"); 
+    const legend = super.document.createElement("legend"); 
     legend.style.width = "max-content"; 
     legend.textContent = "Punteggio " +ref+ " (votate:"+obj+" su " + starNumber + " stelle):"
-    const radioNoRate = super.documentcreateElement("input"); 
+    const radioNoRate = super.document.createElement("input"); 
     radioNoRate.type= "radio"; 
     radioNoRate.id="no-rate"+ref; 
     radioNoRate.className = "input-no-rate"; 
@@ -29,7 +29,7 @@ for (obj in objects)
 
     for (cont = 1; cont < starNumber +1; cont++ )
     {
-        const radio = super.documentcreateElement("input"); 
+        const radio = super.document.createElement("input"); 
         radio.type= "radio"; 
         radio.id=ref+"-rate"+cont; 
         radio.className = "input-no-rate"; 
@@ -39,7 +39,7 @@ for (obj in objects)
         if (objects[i]==cont)
         {radio.checked="true"}; 
 
-        const label = super.documentcreateElement("label"); 
+        const label = super.document.createElement("label"); 
         label.htmlFor=radio.id; 
         label.title = cont + "stelle"; 
         label.innerText= label.title; 
