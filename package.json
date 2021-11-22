@@ -1,6 +1,6 @@
 {
   "name": "accessible-five-stars",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "an accessible radio button five star rating system. ",
   "main": "index.js",
   "style": "./css/normalize.css",
@@ -24,8 +24,8 @@
   "homepage": "https://github.com/novis-games/accessible-five-stars#readme",
   "devDependencies": {
     "jsdom": "^18.1.1"
-  }, 
+  },
   "files": [
     "css/*.css"
-    ]
+  ]
 }
