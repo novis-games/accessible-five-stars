@@ -8,12 +8,24 @@ npm i accessible-five-stars
 
 # add css (starability-slot)
 
-- vue/cordova - index.html : require('../node_modules/accessible-five-stars/css/starability-slot.min.css'); 
+- vue/cordova 
+   index.html : 
+    ```javascript
+      require('../node_modules/accessible-five-stars/css/starability-slot.min.css'); 
+     ```
 
 
 # importing package: 
 
-- import (Vue) : import starRating from "accessible-five-stars";
+- import (Vue.js) : 
+ ```javascript
+import starRating from "accessible-five-stars" /**/;
+```
+
+- import (basic html/js project with node_modules folder): 
+ ```html
+    <script type='application/javascript' src='node_modules/three/build/three.js'></script>
+ ```
 
 
 # usage: 
