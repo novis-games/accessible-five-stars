@@ -11,8 +11,9 @@ function createRating(objects, starNumber, document, div) {
       fieldset.id = obj.ref + "-rating";
       fieldset.className = "starability-slot"
       const legend = document.createElement("legend");
-      legend.style.width = "max-content";
-      legend.textContent = "Punteggio " + obj.ref + " (votate: " + obj.value + " su " + starNumber + " stelle):"
+      //legend.style.width = "max-content";
+      legend.setAttribute('style', 'width: max-content;white-space: pre;');
+      legend.textContent = "Punteggio " + obj.ref + "\r\n (votate: " + obj.value + " su " + starNumber + " stelle):"
 
       const radioNoRate = document.createElement("input");
       radioNoRate.type = "radio";
@@ -45,7 +46,8 @@ function createRating(objects, starNumber, document, div) {
             }
           }
           outputValues.push(json);
-          legend.textContent = "Punteggio " + obj.ref + " (votate: " + radio.value + " su " + starNumber + " stelle):"
+          legend.setAttribute('style', 'width: max-content;white-space: pre;');
+          legend.textContent = "Punteggio " + obj.ref + "\r\n (votate: " + radio.value + " su " + starNumber + " stelle):"
         }, false);
         if (objects[i].value == cont) { radio.checked = "true" };
 
